@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
+    android:orientation="vertical"
+    tools:context=".bhajanPlayer.bhajanPLayer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp">
+
+            <ImageView
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/upper"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Bhajan"
+                android:textStyle="bold"
+                android:textColor="#ffd200"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:hint="Start Time"
+                android:id="@+id/startTime"
+                android:layout_margin="@dimen/_5sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/timeStart"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/baseline_add_alarm_24"
+                android:layout_margin="@dimen/_5sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:hint="Stop Time "
+                android:id="@+id/stopTime"
+                android:layout_margin="@dimen/_5sdp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/timeStop"
+                android:background="@drawable/baseline_add_alarm_24"
+                android:layout_margin="@dimen/_5sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#ffd200"
+                android:textSize="@dimen/_24sdp"
+                android:text="━━━ OR ━━━"
+                android:layout_margin="@dimen/_5sdp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:text="Repeat :"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize = "@dimen/_25sdp"
+                android:textColor="#ffd200"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="11"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+               android:gravity="center"
+                android:textColor="#ffd200"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="21"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#ffd200"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="51"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#ffd200"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="108"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#ffd200"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Choose Mantra "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:id="@+id/chooseMantra"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:id="@+id/start"
+                android:layout_margin="@dimen/_5sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Stop"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_weight="2"
+                android:id="@+id/stop"
+                android:layout_margin="@dimen/_5sdp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp">
+
+            <ImageView
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/lower"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/mantraText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="Mantra here"
+                    android:textColor="#ffd200"
+                    android:textSize="@dimen/_25sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

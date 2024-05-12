@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NAAMJAP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_11">11</string>
+    <string name="_21" />
+    <string name="daily">Daily</string>
+    <string name="onetime">OneTime</string>
+    <string name="time">Time</string>
+    <string name="picktime">PickTime</string>
+    <string name="mantra">MANTRA</string>
+    <string name="jaap_count">jaap count</string>
+    <string name="reset">reset</string>
+    <string name="mantraname">MantraName</string>
+    <string name="todo">TODO</string>
+</resources>

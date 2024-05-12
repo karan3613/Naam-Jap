@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
+    tools:context=".JapGrah.JapGrah"
+    android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="127dp"
+                    android:background="@drawable/bell"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/bell1"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="127dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/bell"
+                    android:id="@+id/bell2"/>
+
+                <ImageView
+                    android:id="@+id/photoFrame"
+                    android:layout_width="166dp"
+                    android:layout_height="245dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/mantraRelativeLayout">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mantraHolder"
+                    android:layout_width="224dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="#FF0000"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="@dimen/_3sdp"
+                    >
+
+                    <TextView
+                        android:id="@+id/mantra"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Mantra"
+                        android:textAlignment="center"
+                        android:textColor="#ffd200"
+                        android:textSize="@dimen/_30sdp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageButton
+                    android:id="@+id/onoff"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/musiconbutton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_music_note_24" />
+
+                <ImageButton
+                    android:layout_width="73dp"
+                    android:layout_height="92dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/belpatraphool"
+                    android:scaleType="fitCenter" />
+
+
+                <ImageView
+                    android:layout_width="63dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/diya1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="94dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shankh"
+                    android:scaleType="fitCenter" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Jaap"
+                    android:id="@+id/jaap"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/_17sdp"
+                    android:textColor="#ffd200"
+                    android:textStyle="bold"
+                    android:id="@+id/countDisplay"/>
+
+                <Button
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/baseline_restart_alt_24"
+                    android:id="@+id/reset"/>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+

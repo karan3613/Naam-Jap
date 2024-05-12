@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".bhajanAlarm.App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NAAMJAP"
+        tools:targetApi="31">
+        <activity
+            android:name=".chalisa.chalisa"
+            android:exported="false" />
+        <activity
+            android:name=".chalisa.chalisaSelection"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.pujaSamgri.phoolActivty"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.pujaSamgri.malaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bhajanAlarm.RingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".godMantras.godMantras"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.pujaSamgri.pujaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.MantraNames.MantraNamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.godImages.godImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.mainSelection.mainSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.beforeJaapGodListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profileActivity.profileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bhajanPlayer.godMantraNameList.godMantraList.bpGodMantraList"
+            android:exported="false" />
+        <activity
+            android:name=".bhajanPlayer.godMantraNameList.godNameList"
+            android:exported="false" />
+        <activity
+            android:name=".JapGrah.godMantras.godMantras"
+            android:exported="false" />
+        <activity
+            android:name=".godMantraList.godMantraList"
+            android:exported="false" />
+        <activity
+            android:name=".beforeJaap.godImages.godPhotos.godPhotos"
+            android:exported="false" />
+        <activity
+            android:name=".bhajanAlarm.bhajanAlarm"
+            android:exported="false" />
+        <activity
+            android:name=".ramNaam.ramNameWriting"
+            android:exported="false" />
+        <activity
+            android:name=".bhajanPlayer.bhajanPLayer"
+            android:exported="false" />
+        <activity
+            android:name=".JapGrah.JapGrah"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".bhajanAlarm.myReceiver" />
+
+        <service android:name=".bhajanAlarm.AlarmService" />
+    </application>
+
+</manifest>
